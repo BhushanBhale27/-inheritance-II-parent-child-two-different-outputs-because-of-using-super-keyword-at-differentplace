@@ -1,0 +1,35 @@
+class PARENT {
+     print(){
+         
+         console.log("this is a parent class");
+     }
+ } 
+ 
+ class CHILD extends PARENT{
+     print(){
+         console.log("this is a child class");
+         super.print();
+     }
+ }
+
+//Do Not change the Below  Code
+
+
+
+var obj_parent = new PARENT();
+obj_parent.print();
+
+var obj_child = new CHILD();
+obj_child.print();
+
+
+
+//OUTPUT
+
+//this is a parent class
+
+//this is a child class
+
+//this is a parent class
+
+
